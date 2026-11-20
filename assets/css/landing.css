@@ -411,9 +411,22 @@ a { color: var(--vino); text-underline-offset: 0.2em; }
 .servicio__datos li { display: inline-flex; align-items: center; gap: 0.45rem; }
 .servicio__datos .icono { color: var(--terracota); }
 
+/* Cuidado facial: acento terracota (solo en el borde, uso decorativo) */
+.grupo-servicios--facial .servicio { border-top-color: var(--terracota); }
+.servicio__cuerpo { display: flex; flex-direction: column; gap: 0.85rem; flex: 1; }
+.servicio__cuerpo .enlace-accion { margin-top: auto; align-self: flex-start; }
+
 @media (min-width: 48rem) {
   .tarjetas { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; }
   .servicio { padding: 2rem; }
+  /* Servicio único del grupo: ocupa el ancho completo con título y cuerpo en dos columnas */
+  .servicio--ancho {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: 1rem 2rem;
+    align-items: start;
+  }
 }
 @media (min-width: 62rem) {
   .grupo-servicios { display: grid; grid-template-columns: 16rem minmax(0, 1fr); gap: 3rem; }

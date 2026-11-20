@@ -35,6 +35,7 @@ dato, abre la página con `?revision` al final de la URL.
 |---|---|
 | Masaje relajante | Duración y precio. |
 | Masaje relajante con piedras volcánicas | Duración, precio, cómo se desarrolla la sesión y contraindicaciones o valoración previa que aplique. |
+| Limpieza facial | Duración, precio, en qué consiste la sesión (pasos y productos), quién la realiza y su formación, y si requiere valoración previa de la piel. Si incluye procedimientos más allá de la limpieza (extracción, peelings, aparatología), confirmar competencias y requisitos antes de publicarlos. |
 | Drenaje linfático | Duración, precio, alcance del servicio, formación de quien lo presta y condiciones de atención. |
 | Masaje posquirúrgico | Duración, precio, competencias acreditadas, requisitos (por ejemplo, autorización médica) y verificación de requisitos sanitarios aplicables a la actividad y modalidad. **No ampliar su descripción hasta confirmar esto.** |
 

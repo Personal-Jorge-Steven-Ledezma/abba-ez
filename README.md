@@ -43,8 +43,8 @@ python3 -m http.server 8000   # http://localhost:8000
   terracota en numerales, iconos y ondas (nunca en texto pequeño).
 - **Ondas del símbolo** como recurso discreto: identificador de portada, remate de la imagen y cierre de contacto.
   El arco de las imágenes retoma la curva del símbolo y el espacio de la propuesta.
-- **Servicios en dos grupos:** «Relajación» y «Con valoración previa», para que drenaje linfático y masaje
-  posquirúrgico no se lean como servicios de relajación ni prometan resultados.
+- **Servicios en tres grupos:** «Relajación», «Cuidado facial» y «Con valoración previa», para que drenaje
+  linfático y masaje posquirúrgico no se lean como servicios de relajación ni prometan resultados.
 - **WhatsApp como consulta:** los mensajes llevan el nombre del servicio y la página aclara que escribir no
   confirma la cita.
 - **Accesibilidad:** contraste AA, foco visible, acordeones con patrón WAI-ARIA, menú con Escape,

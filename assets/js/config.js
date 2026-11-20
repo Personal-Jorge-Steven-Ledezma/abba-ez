@@ -48,6 +48,7 @@ window.ABBA_CONFIG = {
   servicios: {
     "masaje-relajante":            { duracion: "", precio: "" },
     "masaje-piedras-volcanicas":   { duracion: "", precio: "" },
+    "limpieza-facial":             { duracion: "", precio: "" },
     "drenaje-linfatico":           { duracion: "", precio: "" },
     "masaje-posquirurgico":        { duracion: "", precio: "" }
   },
