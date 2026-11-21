@@ -3,8 +3,8 @@
 Landing page responsive de ABBA EZ, construida sobre la identidad «Ritual en equilibrio».
 **Versión de revisión.**
 
-- Sitio: https://jorgestevenledezma.github.io/abba-ez/
-- Modo revisión (muestra datos pendientes): https://jorgestevenledezma.github.io/abba-ez/?revision
+- Sitio: https://personal-jorge-steven-ledezma.github.io/abba-ez/
+- Modo revisión (muestra datos pendientes): https://personal-jorge-steven-ledezma.github.io/abba-ez/?revision
 - Datos pendientes: [PENDIENTES.md](PENDIENTES.md)
 
 ## Cómo editar
