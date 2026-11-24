@@ -58,9 +58,13 @@ cita, qué servicio elegir y por qué algunos requieren valoración previa.
 
 ## Marca e imágenes
 
-- **Logotipo vectorial (SVG o AI).** El sitio usa una extracción raster limpia de la versión con transparencia
-  del PDF (1339 × 575 px), suficiente para web. Para impresión, bordado y favicon nítido hace falta el archivo
-  vectorial de producción.
+- **Logotipo vectorial (SVG, PDF y EPS).** El sitio usa los PNG con transparencia del manual de identidad
+  (`Marca/`, 1211 × 599 px), suficientes para web. El manual indica como siguiente paso aprobar el logotipo y
+  producir el arte final vectorial; con él se reemplazan logotipo, firma, símbolo y favicon. El símbolo tiene trazos
+  finos: validar su lectura a 32 y 48 px (favicon) con el vectorial.
+- **Fotografías en mayor resolución.** Las imágenes actuales miden 722 × 626 px (portada) y 482 × 584 px
+  (atención); en pantallas de alta densidad se ven suaves. Reemplazarlas por fotos reales de al menos
+  1200 × 1500 px.
 - **Fotografías propias.** Las de la portada y la sección «Nuestra atención» son visualizaciones generadas para
   la propuesta, usadas como ambientación (el pie lo indica). Reemplazar por fotos reales: manos, lino, detalles
   del espacio, luz natural. Formatos sugeridos: portada 4:5 (mín. 1200 × 1500 px) y atención 4:5.
@@ -70,4 +74,5 @@ cita, qué servicio elegir y por qué algunos requieren valoración previa.
 
 1. Completar como mínimo WhatsApp, ciudad, modalidad y horarios.
 2. Retirar `<meta name="robots" content="noindex, nofollow">` de `index.html`.
-3. Actualizar `og:url` y `og:image` si se usa dominio propio.
+3. Conectar el dominio `www.abbaez.com` (Namecheap → GitHub Pages): ver «Dominio» en el README.
+   Las direcciones del sitio (canonical, `og:url`, `og:image`) ya apuntan a `https://www.abbaez.com/`.
