@@ -2,3 +2,4 @@ _diseno/
 .DS_Store
 Thumbs.db
 *.swp
+*:Zone.Identifier

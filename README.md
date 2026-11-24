@@ -1,6 +1,7 @@
 # ABBA EZ · Estética & Bienestar — Landing
 
-Landing page responsive de ABBA EZ, construida sobre la identidad «Ritual en equilibrio».
+Landing page responsive de ABBA EZ, construida sobre el **Manual de identidad visual y aplicaciones 1.0**
+(carpeta [`Marca/`](Marca/), noviembre de 2026).
 **Versión de revisión.**
 
 - Sitio: https://personal-jorge-steven-ledezma.github.io/abba-ez/
@@ -13,7 +14,7 @@ Landing page responsive de ABBA EZ, construida sobre la identidad «Ritual en eq
 |---|---|
 | WhatsApp, ciudad, horarios, redes, profesional, precios, respuestas de preguntas | `assets/js/config.js` (único archivo de datos) |
 | Textos de secciones | `index.html` (cada sección está marcada con un comentario A–H) |
-| Colores, tipografías, espaciados | Variables al inicio de `assets/css/landing.css` |
+| Colores, tipografías, espaciados, radios, movimiento | Tokens al inicio de `assets/css/landing.css` (paleta del manual → tokens semánticos) |
 | Imágenes | `assets/img/` (formato `.webp` con respaldo `.jpg`) |
 
 Un campo vacío en `config.js` no se muestra: la página nunca enseña marcadores ni datos sin confirmar.
@@ -27,9 +28,10 @@ assets/css/landing.css   Estilos mobile first
 assets/js/config.js      Datos del negocio
 assets/js/main.js        WhatsApp, menú móvil, acordeones, animaciones
 assets/img/              Logotipo, firma, símbolo, favicon y fotografías de ambientación
+Marca/                   Manual de identidad (PDF) y logotipos originales con transparencia
 ```
 
-Sitio estático sin build ni dependencias. Fuentes: DM Serif Display y Manrope (Google Fonts, SIL OFL 1.1).
+Sitio estático sin build ni dependencias. Fuentes: Cormorant Garamond y Manrope (Google Fonts, SIL OFL 1.1).
 
 ## Ver en local
 
@@ -39,10 +41,20 @@ python3 -m http.server 8000   # http://localhost:8000
 
 ## Decisiones de diseño
 
-- **Marfil y vino** construyen el reconocimiento; salvia solo en «Cómo consultar» y etiquetas;
-  terracota en numerales, iconos y ondas (nunca en texto pequeño).
-- **Ondas del símbolo** como recurso discreto: identificador de portada, remate de la imagen y cierre de contacto.
-  El arco de las imágenes retoma la curva del símbolo y el espacio de la propuesta.
+- **Identidad del manual:** vino profundo `#6B353C` (primario y CTA), marfil cálido `#F3EBE3` (fondo), blanco cálido
+  `#FFFCF9` (superficies), ciruela `#40262B` (texto), rosa arcilla `#C79D9B` (acento) y arena `#DFCDC0` (divisiones).
+  Los componentes usan tokens semánticos (`--color-*`), nunca los valores de marca directamente.
+- **Ajuste de accesibilidad:** el gris secundario del manual (`#746D69`) da 4,3:1 sobre marfil, por debajo de AA;
+  el sitio usa `#6B6460` (4,9:1 sobre marfil, 5,7:1 sobre blanco). El rosa arcilla da 2,0:1 sobre marfil: solo
+  decorativo (contorno del arco, punto de las etiquetas), nunca en texto.
+- **Logotipo:** firma sin descriptor en el encabezado (a ese tamaño «Estética & Bienestar» no se lee, regla
+  principal del manual); logotipo completo en el pie a 200 px (mínimo digital: 180 px); símbolo aislado en el
+  identificador de portada y, en marfil sobre vino, en Contacto (pieza para redes del manual). Derivados de los PNG
+  de `Marca/`; el arte vectorial final sigue pendiente.
+- **Tipografía:** Cormorant Garamond (títulos, 500–600) y Manrope (interfaz). Escala con `clamp()`; nunca más de dos familias.
+- **Arco del manual:** contorno rosa arcilla concéntrico al remate en arco de la foto de portada y arco de cierre en Contacto.
+- **Sistema:** espaciado de base 8 px, radios moderados (6 px botones, 12 px tarjetas, 20 px imágenes),
+  transiciones de 150–300 ms y sombras mínimas.
 - **Servicios en tres grupos:** «Relajación», «Cuidado facial» y «Con valoración previa», para que drenaje
   linfático y masaje posquirúrgico no se lean como servicios de relajación ni prometan resultados.
 - **WhatsApp como consulta:** los mensajes llevan el nombre del servicio y la página aclara que escribir no
