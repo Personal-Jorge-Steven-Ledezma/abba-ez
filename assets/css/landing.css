@@ -720,6 +720,7 @@ html:not(.js) .menu { position: static; opacity: 1; visibility: visible; transfo
 .contacto__datos dd { margin: 0.4rem 0 0 1.85rem; font-size: 1.0625rem; }
 .contacto__datos ul { list-style: none; margin: 0; padding: 0; }
 .contacto__datos a { color: var(--color-on-primary); }
+.contacto__titular { display: block; margin-top: 0.15rem; font-size: 0.9375rem; color: var(--color-on-primary-muted); }
 
 /* Remate decorativo mientras no haya datos de contacto publicados: arco del manual */
 .contacto__decor { display: none; }

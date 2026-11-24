@@ -1,6 +1,6 @@
 # Información pendiente para completar el sitio
 
-Versión de revisión del 20 de noviembre de 2026. Todo lo que aparece aquí **no se muestra en la página
+Actualizado el 24 de noviembre de 2026 (sitio publicado en www.abbaez.com). Todo lo que aparece aquí **no se muestra en la página
 pública** hasta que se escriba en [`assets/js/config.js`](assets/js/config.js). Para ver dónde irá cada
 dato, abre la página con `?revision` al final de la URL.
 
@@ -8,7 +8,6 @@ dato, abre la página con `?revision` al final de la URL.
 
 | Dato | Campo en `config.js` | Efecto al completarlo |
 |---|---|---|
-| WhatsApp comercial (con indicativo, solo dígitos) | `contacto.whatsapp` | Todos los botones «Consultar disponibilidad» abren WhatsApp con un mensaje según el servicio; aparece el botón flotante. |
 | Ciudad | `contacto.ciudad` | Se muestra en Contacto. |
 | Modalidad: local, domicilio o ambas | `contacto.modalidad` + `preguntas.modalidad` | Habilita la pregunta frecuente de modalidad. |
 | Dirección del local (si debe publicarse) | `contacto.direccion` | Se muestra en Contacto. |
@@ -70,9 +69,16 @@ cita, qué servicio elegir y por qué algunos requieren valoración previa.
   del espacio, luz natural. Formatos sugeridos: portada 4:5 (mín. 1200 × 1500 px) y atención 4:5.
 - **Disponibilidad del nombre y dominio.** Validar registro de marca y dominio antes del lanzamiento.
 
-## Antes de publicar oficialmente
+## Hecho al publicar (24 nov 2026)
 
-1. Completar como mínimo WhatsApp, ciudad, modalidad y horarios.
-2. Retirar `<meta name="robots" content="noindex, nofollow">` de `index.html`.
-3. Conectar el dominio `www.abbaez.com` (Namecheap → GitHub Pages): ver «Dominio» en el README.
-   Las direcciones del sitio (canonical, `og:url`, `og:image`) ya apuntan a `https://www.abbaez.com/`.
+- WhatsApp +57 310 427 9164 (a nombre de Teresa Amparo Enriquez Zuñiga) en `config.js`: botones, botón flotante y Contacto.
+- Página indexable; dominio `www.abbaez.com`; `robots.txt`, `sitemap.xml`, `llms.txt` y datos estructurados.
+
+## Lo más urgente ahora
+
+1. **Política de tratamiento de datos** (`privacidadUrl`): el sitio ya recibe consultas por WhatsApp con datos
+   personales (Ley 1581 de 2012).
+2. **Ciudad, modalidad y horarios**: sin ellos Google no puede mostrar el negocio en búsquedas locales. Al tenerlos,
+   agregarlos también al JSON-LD (`address`, `openingHoursSpecification`) y a `llms.txt`.
+3. **Google Search Console**: verificar `abbaez.com` y enviar `https://www.abbaez.com/sitemap.xml`.
+4. **Ficha de la profesional**: con cargo, foto y formación verificable se activa la ficha en «Nuestra atención».
