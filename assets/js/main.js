@@ -141,6 +141,12 @@
     var wa = $("a", mostrar("whatsapp"));
     wa.href = urlWhatsapp();
     wa.textContent = "+" + numero.replace(/^(\d{2})(\d{3})(\d{3})(\d+)$/, "$1 $2 $3 $4");
+    if (lleno(contacto.whatsappNombre)) {
+      var titular = document.createElement("span");
+      titular.className = "contacto__titular";
+      titular.textContent = contacto.whatsappNombre;
+      wa.parentNode.appendChild(titular);
+    }
   }
 
   var ubicacion = [contacto.direccion, contacto.zonaCobertura, contacto.ciudad].filter(lleno);

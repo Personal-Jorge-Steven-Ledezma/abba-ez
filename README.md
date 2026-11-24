@@ -2,7 +2,7 @@
 
 Landing page responsive de ABBA EZ, construida sobre el **Manual de identidad visual y aplicaciones 1.0**
 (carpeta [`Marca/`](Marca/), noviembre de 2026).
-**Versión de revisión.**
+Publicada en **https://www.abbaez.com/** desde el 24 de noviembre de 2026.
 
 - Sitio: https://www.abbaez.com/
 - Modo revisión (muestra datos pendientes): https://www.abbaez.com/?revision
@@ -78,4 +78,7 @@ La versión sin `www` redirige sola a `www`.
 ## Publicación
 
 GitHub Pages desde `main`, carpeta raíz. `.nojekyll` evita el procesamiento con Jekyll.
-La página lleva `noindex` mientras esté en revisión.
+La página es indexable (`index, follow`). SEO: título y descripción, canonical, Open Graph y tarjeta de Twitter,
+datos estructurados (`HealthAndBeautyBusiness`, `WebSite` y `FAQPage`, solo con datos confirmados), `robots.txt`,
+`sitemap.xml` y `llms.txt` para buscadores con IA. Al publicar datos nuevos (ciudad, horarios, precios), actualizar
+también el JSON-LD de `index.html` y `llms.txt`, y la fecha de `sitemap.xml`.

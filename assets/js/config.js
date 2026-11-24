@@ -14,7 +14,9 @@ window.ABBA_CONFIG = {
   contacto: {
     // Número comercial de WhatsApp con indicativo de país, solo dígitos.
     // Ejemplo de formato (no es un número real): "57" + 10 dígitos.
-    whatsapp: "",
+    whatsapp: "573104279164",
+    // Titular del WhatsApp: se muestra junto al número en Contacto.
+    whatsappNombre: "Teresa Amparo Enriquez Zuñiga",
     ciudad: "",
     // "local", "domicilio" o "ambas". Define el texto de modalidad.
     modalidad: "",
