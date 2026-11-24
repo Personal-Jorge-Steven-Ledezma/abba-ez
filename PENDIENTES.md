@@ -74,4 +74,5 @@ cita, qué servicio elegir y por qué algunos requieren valoración previa.
 
 1. Completar como mínimo WhatsApp, ciudad, modalidad y horarios.
 2. Retirar `<meta name="robots" content="noindex, nofollow">` de `index.html`.
-3. Actualizar `og:url` y `og:image` si se usa dominio propio.
+3. Conectar el dominio `www.abbaez.com` (Namecheap → GitHub Pages): ver «Dominio» en el README.
+   Las direcciones del sitio (canonical, `og:url`, `og:image`) ya apuntan a `https://www.abbaez.com/`.

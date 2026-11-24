@@ -4,8 +4,8 @@ Landing page responsive de ABBA EZ, construida sobre el **Manual de identidad vi
 (carpeta [`Marca/`](Marca/), noviembre de 2026).
 **Versión de revisión.**
 
-- Sitio: https://personal-jorge-steven-ledezma.github.io/abba-ez/
-- Modo revisión (muestra datos pendientes): https://personal-jorge-steven-ledezma.github.io/abba-ez/?revision
+- Sitio: https://www.abbaez.com/
+- Modo revisión (muestra datos pendientes): https://www.abbaez.com/?revision
 - Datos pendientes: [PENDIENTES.md](PENDIENTES.md)
 
 ## Cómo editar
@@ -61,6 +61,19 @@ python3 -m http.server 8000   # http://localhost:8000
   confirma la cita.
 - **Accesibilidad:** contraste AA, foco visible, acordeones con patrón WAI-ARIA, menú con Escape,
   objetivos táctiles de 44 px o más y animaciones desactivadas con `prefers-reduced-motion`.
+
+## Dominio
+
+`abbaez.com` está registrado en Namecheap (vence el 24 nov 2027). DNS en Namecheap (Advanced DNS):
+
+| Tipo | Host | Valor |
+|---|---|---|
+| A | `@` | `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153` |
+| CNAME | `www` | `personal-jorge-steven-ledezma.github.io.` |
+| TXT | `_github-pages-challenge-personal-jorge-steven-ledezma` | Código de verificación de la organización en GitHub |
+
+En GitHub: **Settings → Pages → Custom domain** = `www.abbaez.com` (crea el archivo `CNAME`) y **Enforce HTTPS**.
+La versión sin `www` redirige sola a `www`.
 
 ## Publicación
 
